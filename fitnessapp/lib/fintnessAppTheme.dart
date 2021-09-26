@@ -21,18 +21,11 @@ class FintnessAppTheme {
   static const String fontName = 'Roboto';
 
   static const TextTheme textTheme = TextTheme(
-    // ignore: deprecated_member_use
-    display1: display1,
-    // ignore: deprecated_member_use
-    headline: headline,
-    // ignore: deprecated_member_use
-    title: title,
-    // ignore: deprecated_member_use
-    subtitle: subtitle,
-    // ignore: deprecated_member_use
-    body2: body2,
-    // ignore: deprecated_member_use
-    body1: body1,
+    headline1: display1,
+    headline2: headline,
+    subtitle1: subtitle,
+    bodyText2: body2,
+    bodyText1: body1,
     caption: caption,
   );
 

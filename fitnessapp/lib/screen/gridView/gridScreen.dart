@@ -1,5 +1,5 @@
+import 'package:fitnessapp/utilities/FunctinsData.dart';
 import 'package:flutter/material.dart';
-import '../../utils/FunctinsData.dart';
 import '../../widget/CardItem.dart';
 
 class GridScreen extends StatefulWidget {

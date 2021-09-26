@@ -1,5 +1,5 @@
 import 'package:fitnessapp/screen/clippath/ClipPathScreen.dart';
-import 'package:fitnessapp/utils/FunctinsData.dart';
+import 'package:fitnessapp/utilities/FunctinsData.dart';
 import 'package:flutter/material.dart';
 
 class CustomGrid {

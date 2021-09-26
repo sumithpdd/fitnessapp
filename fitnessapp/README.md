@@ -7,3 +7,9 @@ Sumith Fitness tracking app.
 For internalization
 
 Flutter Intl: Initialize
+
+## to sign android
+
+cd .\android\
+
+.\gradlew signingReport

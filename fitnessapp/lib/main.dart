@@ -1,27 +1,43 @@
 import 'dart:io';
 
+import 'package:firebase_core/firebase_core.dart';
+import 'package:fitnessapp/screen/appointments.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:provider/provider.dart';
 import './repository/settings_repository.dart' as settingRepo;
 import 'fitnessAppHomeScreen.dart';
 import 'generated/l10n.dart';
 import 'models/CustomGrid.dart';
-import 'utils/app_theme.dart';
+import 'models/user_data.dart';
+import 'services/auth_service.dart';
+import 'utilities/app_theme.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp();
   settingRepo.getLanguageCode().then((value) {
-    runApp(MyWidget(
-      languageCode: value,
-    ));
+    runApp(MultiProvider(
+        providers: [
+          ChangeNotifierProvider(
+            create: (_) => UserData(),
+          ),
+          Provider<AuthService>(
+            create: (_) => AuthService(),
+          ),
+        ],
+        child: MyApp(
+          languageCode: value,
+        )));
   });
 }
 
-class MyWidget extends StatelessWidget {
+class MyApp extends StatelessWidget {
   final languageCode;
 
-  MyWidget({this.languageCode});
+  MyApp({this.languageCode});
 
   final List<CustomGrid> grid = CustomGrid.widgetList();
 
@@ -60,7 +76,7 @@ class MyWidget extends StatelessWidget {
             ],
             supportedLocales: S.delegate.supportedLocales,
             home: Scaffold(
-              body: FitnessAppHomeScreen(),
+              body: Appointments(),
               //    resizeToAvoidBottomPadding: false,
             ),
           );

@@ -1,4 +1,4 @@
-import 'package:fitnessapp/utils/Utils.dart';
+import 'package:fitnessapp/utilities/Utils.dart';
 import 'package:flutter/material.dart';
 import '../UIview/waveView.dart';
 
