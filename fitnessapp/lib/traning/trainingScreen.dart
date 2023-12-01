@@ -1,5 +1,3 @@
-import 'package:fitnessapp/models/exercise.dart';
-
 import 'package:flutter/material.dart';
 import '../UIview/areaListView.dart';
 import '../UIview/runningView.dart';
@@ -91,6 +89,10 @@ class _TrainingScreenState extends State<TrainingScreen>
             curve:
                 Interval((1 / count) * 3, 1.0, curve: Curves.fastOutSlowIn))),
         animationController: widget.animationController!,
+        heading: "You're doing great!",
+        titleText: "You're doing great!",
+        subtitleText: "Keep it up\nand stick to your plan!",
+        imagelocation: "images/fitness_app/runner.png",
       ),
     );
 

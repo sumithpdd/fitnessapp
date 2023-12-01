@@ -1,12 +1,12 @@
 import 'package:fitnessapp/Animation/Animation1.dart';
 import 'package:fitnessapp/Animation/Animation2.dart';
-import 'package:fitnessapp/screen/clippath/ClipPath.dart';
-import 'package:fitnessapp/screen/clippath/ClipPath1.dart';
-import 'package:fitnessapp/screen/clippath/ClipPath2.dart';
-import 'package:fitnessapp/screen/clippath/ClipPathScreen.dart';
-import 'package:fitnessapp/screen/gridView/GridView2.dart';
-import 'package:fitnessapp/screen/gridView/gridview3.dart';
-import 'package:fitnessapp/screen/login/login1/LoginOne.dart';
+import 'package:fitnessapp/screens/clippath/ClipPath.dart';
+import 'package:fitnessapp/screens/clippath/ClipPath1.dart';
+import 'package:fitnessapp/screens/clippath/ClipPath2.dart';
+import 'package:fitnessapp/screens/clippath/ClipPathScreen.dart';
+import 'package:fitnessapp/screens/gridView/GridView2.dart';
+import 'package:fitnessapp/screens/gridView/gridview3.dart';
+import 'package:fitnessapp/screens/login/login1/LoginOne.dart';
 import 'package:fitnessapp/widget/ScaleRoute.dart';
 import 'package:flutter/material.dart';
 

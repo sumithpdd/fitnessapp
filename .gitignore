@@ -20,3 +20,5 @@ doc/api/
 *.js.deps
 *.js.map
 /fitnessapp/android/app/google-services.json
+fitnessapp/.vscode/google-services.json
+fitnessapp/GoogleService-Info.plist

@@ -39,18 +39,22 @@ class _AnimOneState extends State<AnimOne> with SingleTickerProviderStateMixin {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        RaisedButton(
+                        ElevatedButton(
                           child: Text('Buy'),
-                          elevation: 7.0,
-                          color: Colors.blue,
-                          textColor: Colors.white,
+                          style: ElevatedButton.styleFrom(
+                            elevation: 7.0,
+                            primary: Colors.blue, // background
+                            onPrimary: Colors.white, // foreground
+                          ),
                           onPressed: () {},
                         ),
-                        RaisedButton(
+                        ElevatedButton(
                           child: Text('Details'),
-                          elevation: 7.0,
-                          color: Colors.blue,
-                          textColor: Colors.white,
+                          style: ElevatedButton.styleFrom(
+                            elevation: 7.0,
+                            primary: Colors.blue, // background
+                            onPrimary: Colors.white, // foreground
+                          ),
                           onPressed: () {},
                         ),
                       ],

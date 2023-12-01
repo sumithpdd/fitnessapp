@@ -1,4 +1,4 @@
-import 'package:fitnessapp/screen/clippath/ClipPathScreen.dart';
+import 'package:fitnessapp/screens/clippath/ClipPathScreen.dart';
 import 'package:fitnessapp/utilities/FunctinsData.dart';
 import 'package:flutter/material.dart';
 

@@ -1,4 +1,4 @@
-package com.sumith.fitnessapp
+package co.suprtech.fitnessapp
 
 import io.flutter.embedding.android.FlutterActivity
 

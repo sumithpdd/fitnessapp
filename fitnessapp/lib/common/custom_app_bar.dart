@@ -1,7 +1,8 @@
 import 'package:fitnessapp/common/strings.dart';
 import 'package:fitnessapp/common/text_style.dart';
-import 'package:fitnessapp/screen/languages.dart';
 import 'package:flutter/material.dart';
+
+import '../screens/languages.dart';
 
 class CustomAppBar extends StatelessWidget {
   final double opacity;
